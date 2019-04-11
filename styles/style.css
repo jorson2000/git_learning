@@ -1,0 +1,63 @@
+body {
+	font-family: "Trebuchet MS", "Verdana", sans-serif;
+	color: white;
+	background-color: #595547;
+}
+
+a {
+	color:#FF4F4F;
+}
+
+h1, h2 {
+	color:#9FC2F8;
+}
+
+h1 {
+	font-size: 40pt;
+}
+
+strong {
+	color:  #FFF86B;
+}
+
+a, a:visited {
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+p:first-letter {
+	font-weight: bold;
+	font-size:150%;
+}
+
+dl {
+	font-size:75%;
+}
+
+dt{
+	color:  #FFF86B;
+	font-weight:bold;
+}
+ol {
+	counter-reset: item 4;
+	display:block;
+}
+
+ol li {
+	display:block;
+	margin-left:-1.4em;
+}
+
+ol li dl {
+	display:block;
+	margin-left:1.9em;
+}
+
+ol li:before {
+	content:counter(item, decimal) ". ";
+	counter-increment:item -1;
+	padding-right:0.2em;
+}
